@@ -8,11 +8,13 @@ const video = $('.video-player')
 playBtn.onclick = function(event){
     modalVideo.style.display = "block";
     video.style.display = "block";
+    video.src = "https://player.vimeo.com/video/127347999?title=0&amp;byline=0&amp;portrait=0;autoplay=1"
     event.stopPropagation();
 }
 modalVideo.onclick = function(){
     modalVideo.style.display = "none";
     video.style.display = "none";
+    video.src = ""
 }
 var limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
     document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
